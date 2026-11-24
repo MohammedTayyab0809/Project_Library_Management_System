@@ -10,6 +10,8 @@ public class Main {
         view borrowed books, exit
          */
 
+        // Books
+
         Library library = new Library();
         Book book1 = new Book(1, "Summer Story", "Thomas", 10);
         Book book2 = new Book(2, "Winter Story", "Thomsan", 10);
@@ -24,6 +26,10 @@ public class Main {
         } else {
             System.out.println("Entered Book id is not available");
         }
+
+        // Members
+        Library library1 = new Library();
+
 
 
     }
