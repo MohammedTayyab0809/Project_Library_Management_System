@@ -29,16 +29,15 @@ public class Main {
         }
 
         // Members
-        Library library1 = new Library();
         Members member = new Members(1, "Thomas");
         Members member1 = new Members(2, "Thomsan");
         Members member2 = new Members(3, "John");
-        library1.addMembers(member);
-        library1.addMembers(member1);
-        library1.addMembers(member2);
+        library.addMembers(member);
+        library.addMembers(member1);
+        library.addMembers(member2);
 
-        library1.viewMembers();
-        Members foundMember = library1.findMembersById(5);
+        library.viewMembers();
+        Members foundMember = library.findMembersById(5);
         if (foundMember != null){
             foundMember.displayMembers();
         } else {
