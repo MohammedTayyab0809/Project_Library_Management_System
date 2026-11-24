@@ -1,6 +1,6 @@
 import library_management_system.Book;
 import library_management_system.Library;
-import library_management_system.Members;
+import library_management_system.Member;
 
 
 public class Main {
@@ -29,15 +29,15 @@ public class Main {
         }
 
         // Members
-        Members member = new Members(1, "Thomas");
-        Members member1 = new Members(2, "Thomsan");
-        Members member2 = new Members(3, "John");
+        Member member = new Member(1, "Thomas");
+        Member member1 = new Member(2, "Thomsan");
+        Member member2 = new Member(3, "John");
         library.addMembers(member);
         library.addMembers(member1);
         library.addMembers(member2);
 
         library.viewMembers();
-        Members foundMember = library.findMembersById(5);
+        Member foundMember = library.findMembersById(5);
         if (foundMember != null){
             foundMember.displayMembers();
         } else {

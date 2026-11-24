@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Library {
     private List<Book> books = new ArrayList<>();
-    private List<Members> members = new ArrayList<>();
+    private List<Member> members = new ArrayList<>();
 
     public void addBook(Book newBook){
         books.add(newBook);
@@ -26,12 +26,12 @@ public class Library {
         return null;
     }
 
-    public void addMembers(Members newMember){
+    public void addMembers(Member newMember){
         members.add(newMember);
     }
 
-    public Members findMembersById(int id){
-        for (Members member : members){
+    public Member findMembersById(int id){
+        for (Member member : members){
             if (member.getRegID() == id){
                 return member;
             }
@@ -40,7 +40,7 @@ public class Library {
     }
 
     public void viewMembers(){
-        for (Members member : members){
+        for (Member member : members){
             member.displayMembers();
         }
     }

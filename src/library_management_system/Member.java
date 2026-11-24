@@ -1,10 +1,10 @@
 package library_management_system;
 
-public class Members {
+public class Member {
     private int regID;
     private String name;
 
-    public Members(int regID, String name){
+    public Member(int regID, String name){
         this.regID = regID;
         this.name = name;
     }
