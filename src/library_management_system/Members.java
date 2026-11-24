@@ -4,7 +4,7 @@ public class Members {
     private int regID;
     private String name;
 
-    Members(int regID, String name){
+    public Members(int regID, String name){
         this.regID = regID;
         this.name = name;
     }
@@ -18,6 +18,6 @@ public class Members {
     }
 
     public void displayMembers(){
-        System.out.printf("ID: %d \n Name: %s", getRegID(), getName());
+        System.out.printf("ID: %d \nName: %s\n", getRegID(), getName());
     }
 }
